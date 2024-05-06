@@ -22,6 +22,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(appBar: AppBar(), body: HomeWidget()),
     );
   }
+}
 
 class HomeWidget extends StatelessWidget {
   const HomeWidget({super.key});
