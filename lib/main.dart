@@ -19,10 +19,9 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Scaffold(body: HomeWidget()),
+      home: Scaffold(appBar: AppBar(), body: HomeWidget()),
     );
   }
-}
 
 class HomeWidget extends StatelessWidget {
   const HomeWidget({super.key});
@@ -32,25 +31,48 @@ class HomeWidget extends StatelessWidget {
     return Container(
       height: double.infinity,
       width: double.infinity,
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: <Widget>[
-          CircleAvatar(
-            backgroundColor: Colors.blue,
-            child: Text("3"),
-          ),
-          SizedBox(
-            height: 50,
-          ),
-          CustomCircle(
-            backgroundColor: Colors.blue,
-            child: Text(
-              "3",
-              style: TextStyle(color: Colors.white),
-            ),
-          )
-        ],
+      child: SingleChildScrollView(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  height: 150,
+                  width: 150,
+                  color: Colors.green,
+                )),
+            Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  height: 150,
+                  width: 150,
+                  color: Colors.green,
+                )),
+            Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  height: 150,
+                  width: 150,
+                  color: Colors.green,
+                )),
+            Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  height: 150,
+                  width: 150,
+                  color: Colors.green,
+                )),
+            Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  height: 150,
+                  width: 150,
+                  color: Colors.green,
+                )),
+          ],
+        ),
       ),
     );
   }
