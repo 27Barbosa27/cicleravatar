@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, sized_box_for_whitespace, avoid_print
 
+import 'package:cicleravatar/custom-circleAvatar.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -42,17 +43,11 @@ class HomeWidget extends StatelessWidget {
           SizedBox(
             height: 50,
           ),
-          Container(
-            height: 40,
-            width: 40,
-            alignment: Alignment.center,
-            decoration: BoxDecoration(
-                color: Colors.purple,
-                borderRadius: BorderRadius.circular(
-                    40)), //Aqui esta a outra maneira de fazer um circle avatar
+          CustomCircle(
+            backgroundColor: Colors.blue,
             child: Text(
               "3",
-              style: TextStyle(color: Colors.black),
+              style: TextStyle(color: Colors.white),
             ),
           )
         ],
